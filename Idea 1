@@ -24,3 +24,7 @@ Main Program:
  
 Algorithm:
 Needs to be worked upon
+
+Application: 
+For midterm we could create a web search which takes in one word searches (redirects to a real search engine). These one word searches are stored in an array and the most frequent search appears on top of the suggestions. (?)
+
