@@ -1,0 +1,26 @@
+To optimize sequential search based on user query frequency, the idea is to reorder keys dynamically during execution. The program should track how often each key is queried and adjust the list order accordingly, placing frequently accessed keys closer to the front. This improves search efficiency by reducing the number of comparisons needed to find popular keys, especially in longer lists.
+Miller, B., & Ranum, D. (2014). The sequential search. Runestone Academy. https://runestone.academy/runestone/books/published/pythonds/SortSearch/TheSequentialSearch.html
+ 
+Idea 1:
+ 
+Python- We could use a dictionary which holds the frequency of each element of the list entered by the user. Using the values of each key in the dictionary we can update the list in descending order of frequency.
+ 
+Pseudocode:
+Initialize a list named keys containing the keys.
+Initialize a dictionary frequenc to store query counts for each key.
+Increment(key):
+	If key exists in keys:
+    	Increment frequency[key]
+    	Call Resorting()
+ 
+Resorting():
+	Sort keys in descending order of their frequency from frequency dictionary.
+ 
+Main Program:
+	While user provides input:
+    	Read the Increment(key)
+    	Call Resorting(key)
+    	Output the updated keys list
+ 
+Algorithm:
+Needs to be worked upon
