@@ -17,39 +17,34 @@ Main Program:
     	Read the Increment(key)
     	Call Resorting(key)
     	Output the updated keys list
- 
+#Add timings for both optimal and non optimal searches
 Things left to do in this code:
-1. Create and sort code into functions
-2. Add Comments
 3. Test Large Data
 4. Find Time Complexity, look for optimization
 '''
 def Reorder(List, Dictionary):
-    
-    
-#Needs to be worked upon 
+    # Sort the List in place based on the frequency from Dictionary
+    List.sort(key=lambda x: Dictionary[x], reverse=True)
 
+Keys = ["Test1", "Test2", "Test3"]
+Frequency = {key: 0 for key in Keys}
 
-
-Keys= ["Test1","Test2", "Test3"]
-Frequency={Keys[0]:0, Keys[1]:0, Keys[2]:0}
 while True:
+    print("Current list:", Keys)
+    print("Frequency:", Frequency)
     
-    
-    print("Current list:")
-    print(Keys)
-    print(Frequency)
-    Inp=input("Enter your input")
+    Inp = input("Enter your input: ")
+
     if Inp in Keys:
-        CurrentVal=Frequency[Inp]
-        Frequency[Inp]=CurrentVal+1
-        Reorder(Keys,Frequency)
+        # Increment frequency for existing key
+        Frequency[Inp] += 1
     else:
+        # Add new key and set its frequency to 1
         Keys.append(Inp)
-        Frequency[Keys[(len(Keys)-1)]]= 1
+        Frequency[Inp] = 1
 
-    
-
+    # Reorder the keys based on frequency
+    Reorder(Keys, Frequency)
 
 
 
