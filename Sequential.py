@@ -112,7 +112,7 @@ Keys = ["Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7", "Test8", 
 
 
 while True:
-    print("\nCurrent list:", Keys)
+
 
     Inp = input("Enter your input: ")
 
