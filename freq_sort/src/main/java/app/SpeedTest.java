@@ -67,8 +67,8 @@ public class SpeedTest {
         long myListUsedTime = myListTimeEnd - myListTimeBegin;
 
 
-        System.out.printf("[Problem Size: %d, Search counting: %d] Frequency Sequential Search Time Used: %d\n", size, searchSize, myListUsedTime);
-        System.out.printf("[Problem Size: %d, Search counting: %d] Sequential Search Time Used: %d\n", size, searchSize, listUsedTime);
+        System.out.printf("[Problem Size: %d, Search counting: %d] Frequency Sequential Search Time Used: %d ms\n", size, searchSize, myListUsedTime);
+        System.out.printf("[Problem Size: %d, Search counting: %d] Sequential Search Time Used: %d ms\n", size, searchSize, listUsedTime);
     }
 
     /**
@@ -118,7 +118,7 @@ public class SpeedTest {
         long myListUsedTime = myListTimeEnd - myListTimeBegin;
 
 
-        System.out.printf("[Problem Size: %d, Search counting: %d] Frequency Sequential Search Time Used: %d\n", size, searchSize, myListUsedTime);
-        System.out.printf("[Problem Size: %d, Search counting: %d] Sequential Search Time Used: %d\n", size, searchSize, listUsedTime);
+        System.out.printf("[Problem Size: %d, Search counting: %d] Frequency Sequential Search Time Used: %d ms\n", size, searchSize, myListUsedTime);
+        System.out.printf("[Problem Size: %d, Search counting: %d] Sequential Search Time Used: %d ms\n", size, searchSize, listUsedTime);
     }
 }
